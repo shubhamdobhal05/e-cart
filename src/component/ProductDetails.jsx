@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import { useDispatch } from "react-redux";
-import { addItem } from "../redux/action"
-import { NavLink, useParams } from "react-router-dom";
+import { addItem } from "../redux/action/index"
+import { NavLink } from "react-router-dom";
+import { useParams } from "react-router";
 import Skeleton from "react-loading-skeleton";
 
 
@@ -70,12 +71,12 @@ const ProductDetails = () => {
                     <p className="lead">
                         {product.description}
                     </p>
-                    <NavLink className="btn btn-outline-dark px-4 py-2" onClick= {() => addProduct(product)}>
+                    <button className="btn btn-outline-dark px-4 py-2" onClick= {() => addProduct(product)}>
                         Add to Cart
-                    </NavLink>
+                    </button>
                     <NavLink to="/login" className="btn btn-dark mx-2 px-4 py-2">
                         Place Order
-                    </NavLink>
+                    </NavLink> 
                 </div>
             </>
         )
