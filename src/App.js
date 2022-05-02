@@ -1,5 +1,4 @@
 
-
 import './App.css';
 import Home from './component/Home';
 import Navbar from './component/Navbar';
@@ -9,6 +8,7 @@ import ProductDetails from './component/ProductDetails';
 import Login from "./component/login";
 import Register from "./component/register";
 import Cart from './component/Cart';
+import Checkout from "./component/Checkout";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
         </Routes>
       
     </>
@@ -28,4 +29,3 @@ function App() {
 }
 
 export default App;
-
