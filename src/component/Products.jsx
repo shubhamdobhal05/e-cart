@@ -8,10 +8,10 @@ const Products = () => {
     const [data, setData] = useState([])
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
-    
+    let componentMounted = true;
 
     useEffect(() => {
-        let componentMounted = true;
+        
         const getProducts = async () => {
             setLoading(true);
             const res = await fetch("https://fakestoreapi.com/products");
@@ -27,7 +27,7 @@ const Products = () => {
             }
         }
         getProducts();
-    }, []);
+    },[]);
 
     const Loading = () => {
         return (
