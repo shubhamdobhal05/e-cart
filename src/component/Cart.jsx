@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import {  useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { delItem } from "../redux/action/index";
+import { deleteItem } from "../redux/action/index";
 
 
 
