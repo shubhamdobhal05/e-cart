@@ -12,7 +12,7 @@ const Cart = () => {
     const dispatch = useDispatch();
 
     const handleClose = (item) => {
-        dispatch(delItem(item))
+        dispatch(deleteItem(item))
     }
 
     const cartItems = (cartItem) => {
