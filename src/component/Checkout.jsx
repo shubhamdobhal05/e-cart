@@ -37,7 +37,7 @@ const Checkout = () => {
                             </li>
                         </ul>
 
-                        <form className="card p-2">
+                        <form className="card p-2 abc">
                             <div className="input-group">
                                 <input type="text" className="form-control" placeholder="Promo code" />
                                 <button type="submit" className="btn btn-secondary">Redeem</button>
