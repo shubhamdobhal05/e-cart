@@ -26,7 +26,7 @@ const ProductDetails = () => {
 
         }
         getProducts();
-    },[]);
+    });
 
     const Loading = () => {
         return (
